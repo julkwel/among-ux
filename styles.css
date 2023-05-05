@@ -27,13 +27,13 @@
 }
 
 .home {
-  background: linear-gradient(
+  /* background: linear-gradient(
     155.37deg,
     rgb(248, 0, 0) 15.63%,
     rgb(0, 111, 131) 29.63%,
     rgb(55, 0, 128) 51.55%,
     rgb(0, 253, 0) 90.85%
-  );
+  ); */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@ section {
 
 header {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   background: linear-gradient(
@@ -73,18 +73,20 @@ header {
   padding: 2rem 9%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 1000;
   box-shadow: 0 0.5rem 1rem var(--header__shadow);
 }
 
-header .logo {
+.logo {
+  position: fixed;
+  top: 0;
   font-size: 3rem;
   color: var(--couleur__code);
   font-weight: bolder;
 }
 
-header .logo span {
+.logo span {
   color: var(--orange);
 }
 
