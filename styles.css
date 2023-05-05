@@ -109,7 +109,7 @@ a {
 }
 
 header .navbar a:hover {
-  color: var(--orange);
+  cursor: auto;
 }
 
 .icon {
