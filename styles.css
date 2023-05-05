@@ -131,3 +131,12 @@ header .fa-bars {
   border: 0.1rem solid var(--fa__bars);
   display: none;
 }
+
+header .navbar .active {
+  border: 15px solid var(--header__link);
+  border-radius: 100%;
+}
+
+header .navbar .active:hover {
+  border-color: var(--orange);
+}
