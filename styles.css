@@ -1,0 +1,133 @@
+:root {
+  --orange: #f39c12;
+  --white: #fff;
+  --heading: #333;
+  --paragraphe: #999;
+  --couleur__code: rgb(4, 109, 255);
+  --icon: #eee;
+  --background: rgb(1, 1, 15);
+  --icon__span: #555;
+  --header__link: #92acf5;
+  --content_span: #1e003d;
+  --fa__bars: rgba(0, 0, 0, 0.3);
+  --heading__background: rgba(114, 131, 230, 0.05);
+  --header__shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+.home {
+  background: linear-gradient(
+    155.37deg,
+    rgb(248, 0, 0) 15.63%,
+    rgb(0, 111, 131) 29.63%,
+    rgb(55, 0, 128) 51.55%,
+    rgb(0, 253, 0) 90.85%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 2rem 9%;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: var(--heading);
+  color: var(--white);
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: var(--orange);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    155.37deg,
+    rgb(248, 0, 0) 15.63%,
+    rgb(0, 111, 131) 29.63%,
+    rgb(55, 0, 128) 51.55%,
+    rgb(0, 253, 0) 90.85%
+  );
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem var(--header__shadow);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: var(--couleur__code);
+  font-weight: bolder;
+}
+
+header .logo span {
+  color: var(--orange);
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: var(--header__link);
+}
+a {
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header .navbar a:hover {
+  color: var(--orange);
+}
+
+.icon {
+  color: orange;
+  font-size: 15px;
+}
+header .icons a:hover {
+  color: var(--orange);
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: var(--orange);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid var(--fa__bars);
+  display: none;
+}
