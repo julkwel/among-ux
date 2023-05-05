@@ -26,6 +26,10 @@
   transition: 0.2s linear;
 }
 
+body {
+  cursor: none;
+}
+
 .home {
   background: linear-gradient(
     155.37deg,
@@ -108,6 +112,7 @@ a {
 
 header .navbar a:hover {
   color: var(--orange);
+  transform: scale(3);
 }
 
 .icon {
@@ -116,6 +121,7 @@ header .navbar a:hover {
 }
 header .icons a:hover {
   color: var(--orange);
+  transform: scale(3);
 }
 
 header #toggler {
