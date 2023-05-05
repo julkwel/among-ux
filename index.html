@@ -5,11 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First PR</title>
+    <title>
+        <h1>Dezinera</h1>
+    </title>
 </head>
 
 <body>
-    <h1>Resolve this Merge conflict</h1>
+    <style>
+        h1 {
+            color: rgb(0, 255, 0);
+        }
+        
+        .flex {
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav a {
+            margin-right: 2em;
+        }
+        
+        div .text-colored {
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex-basis: 20%;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .content {
+            flex-basis: 80%;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .content h1 {
+            margin-top: 0;
+        }
+        .content .text-yellow {
+            color: yellow;
+        }
+
+        @keyframes flash {
+            0% {opacity: 1;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        .flash {
+            animation: flash 1s infinite;
+        }
+
+        .slide-in {
+            position: relative;
+            left: -100%;
+            animation: slide-in 1s forwards;
+        }
+
+        @keyframes slide-in {
+            100% {left: 0;}
+        }
+    </style>
+
+    <div class="flex">
+        <h1>OUI/OUX Dezinera</h1>
+        <div>
+            <nav>
+                <a href="javascript:void(0)">
+                    <img src="images/sary.png" alt="coucou" />
+                    Homme (Ackeuil)
+                </a>
+                <a href="javascript:void(0)">li Con takita /li</a>
+            </nav>
+        </div>
+    </div>
+
+    <div>
+        <h2>Bonjoure, je suit <span class="text-colored">Dezinera</span> sez eblague</h2>
+        <p>J'etai tougours pasionné par le style="color: red;"> creation de website, I like it dipuis ke j'étai ptit</p>
+    </div>
+
+    <div class="container">
+		<div class="sidebar flash">
+			<h2>Sidebar</h2>
+			<ul>
+				<li><a href="#">Pasion</a></li>
+				<li><a href="#">Con takte</a></li>
+				<li><a href="#">Projekts</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<p class="text-yellow slide-in">Nesitez pa <b style="color:brown;">A me contacté</b> si sa vous s'interresse je que je fai</p>
+			<p>On va kommensier ave mon pasion</p>
+		</div>
+	</div>
+
+    <footer style="background-color:blue;color:white;text-align: center;">Dezigned 2023 copytright</footer>
 </body>
 
 </html>
