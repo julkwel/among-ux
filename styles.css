@@ -161,3 +161,9 @@ main{
 table, table td {
   border: 2px solid black;
 }
+
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
