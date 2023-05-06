@@ -26,6 +26,27 @@
   transition: 0.2s linear;
 }
 
+
+.message_error_area{
+  /* background-color: green; */
+  /* color: white; */
+  display: flex;
+  width: 100%;
+  /* padding: 10px 10px; */
+  justify-content: center;
+  /* border-radius: 5px; */
+}
+
+.message_error{
+  background-color: green;
+  color: white;
+  padding: 10px 10px;
+  width: 50%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
 .home {
   /* background: linear-gradient(
     155.37deg,
