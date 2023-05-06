@@ -29,11 +29,14 @@
 .home {
   /* background: linear-gradient(
     155.37deg,
-    rgb(248, 0, 0) 15.63%,
-    rgb(0, 111, 131) 29.63%,
-    rgb(55, 0, 128) 51.55%,
-    rgb(0, 253, 0) 90.85%
-  ); */
+    rgb(248, 0, 0) 20%,
+    rgb(0, 111, 131) 20% 40%,
+    rgb(55, 0, 128) 40% 60%,
+    rgb(255, 213, 24) 60% 80%,
+    rgb(255, 50, 193) 80% 100%,
+    rgb(55, 255, 245) 20%,
+    rgb(0, 253, 0) 20%
+  );
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -63,13 +66,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
-    155.37deg,
-    rgb(248, 0, 0) 15.63%,
-    rgb(0, 111, 131) 29.63%,
-    rgb(55, 0, 128) 51.55%,
-    rgb(0, 253, 0) 90.85%
-  );
+  background: radial-gradient(red, yellow, green);
   padding: 2rem 9%;
   display: flex;
   align-items: center;
@@ -91,7 +88,7 @@ header {
 }
 
 header .navbar a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0 1.5rem;
   color: var(--header__link);
 }
@@ -110,6 +107,8 @@ a {
 
 header .navbar a:hover {
   cursor: auto;
+  color: var(--orange);
+  border-bottom: #1e003d solid 10px;
 }
 
 .icon {
@@ -134,11 +133,12 @@ header .fa-bars {
   display: none;
 }
 
-header .navbar .active {
-  border: 15px solid var(--header__link);
-  border-radius: 100%;
+#mouse{
+  position: absolute;
+  z-index: 2000;
+  transform: scale(2);
 }
 
-header .navbar .active:hover {
-  border-color: var(--orange);
+main{
+  color: var(--white);
 }
