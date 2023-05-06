@@ -78,6 +78,18 @@ header .logo span {
     color: var(--orange);
 }
 
+.logo {
+  position: fixed;
+  top: 0;
+  font-size: 3rem;
+  color: var(--couleur__code);
+  font-weight: bolder;
+}
+
+.logo span {
+  color: var(--orange);
+}
+
 header .navbar a {
     font-size: 1.5rem;
     padding: 0 1.5rem;
