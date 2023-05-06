@@ -1,132 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salama</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="home">
+      <header>
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <h1>Dezinera</h1>
-    </title>
-</head>
 
-<body>
-    <style>
-        h1 {
-            color: rgb(0, 255, 0);
-        }
-        
-        .flex {
-            background-color: aqua;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        nav a {
-            margin-right: 2em;
-        }
-        
-        div .text-colored {
-            color: red;
-        }
+        <a href="#" class="logo">Logo<span>.</span></a>
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
+        <nav class="navbar">
+          <a href="#home">Lorem Ipsum</a>
+          <a href="#about">Lorem Ipsum</a>
+          <a href="#profil">Lorem Ipsum</a>
+          <a href="#contact">Lorem Ipsum</a>
+        </nav>
 
-        .sidebar {
-            flex-basis: 20%;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-
-        .sidebar h2 {
-            margin-top: 0;
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar li {
-            margin-bottom: 10px;
-        }
-
-        .sidebar a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .content {
-            flex-basis: 80%;
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        .content h1 {
-            margin-top: 0;
-        }
-        .content .text-yellow {
-            color: yellow;
-        }
-
-        @keyframes flash {
-            0% {opacity: 1;}
-            50% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-
-        .flash {
-            animation: flash 1s infinite;
-        }
-
-        .slide-in {
-            position: relative;
-            left: -100%;
-            animation: slide-in 1s forwards;
-        }
-
-        @keyframes slide-in {
-            100% {left: 0;}
-        }
-    </style>
-
-    <div class="flex">
-        <h1>OUI/OUX Dezinera</h1>
         <div>
-            <nav>
-                <a href="javascript:void(0)">
-                    <img src="images/sary.png" alt="coucou" />
-                    Homme (Ackeuil)
-                </a>
-                <a href="javascript:void(0)">li Con takita /li</a>
-            </nav>
+          <a href="#" class="fas fa-heart icon"></a>
+          <a href="#" class="fas fa-shopping-cart icon"></a>
+          <a href="#" class="fas fa-user icon"></a>
         </div>
+      </header>
+
+      <main>
+        <img src="./body.gif" alt="Une erreur c'est produit lors du chargement du page 😆">
+        <img src="boooody.png" alt="Une erreur c'est produit lors du chargement du page 😆">
+      </main>
+
+      <footer>
+        <p>&copy; 2023 Mon site - Tous droits réservés</p>
+      </footer>
     </div>
-
-    <div>
-        <h2>Bonjoure, je suit <span class="text-colored">Dezinera</span> sez eblague</h2>
-        <p>J'etai tougours pasionné par le style="color: red;"> creation de website, I like it dipuis ke j'étai ptit</p>
-    </div>
-
-    <div class="container">
-		<div class="sidebar flash">
-			<h2>Sidebar</h2>
-			<ul>
-				<li><a href="#">Pasion</a></li>
-				<li><a href="#">Con takte</a></li>
-				<li><a href="#">Projekts</a></li>
-			</ul>
-		</div>
-		<div class="content">
-			<p class="text-yellow slide-in">Nesitez pa <b style="color:brown;">A me contacté</b> si sa vous s'interresse je que je fai</p>
-			<p>On va kommensier ave mon pasion</p>
-		</div>
-	</div>
-
-    <footer style="background-color:blue;color:white;text-align: center;">Dezigned 2023 copytright</footer>
-</body>
-
+    <span id="mouse">🐀</span>
+  </body>
 </html>
