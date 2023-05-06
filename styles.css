@@ -26,8 +26,8 @@
   transition: 0.2s linear;
 }
 
-.home {
-  /* background: linear-gradient(
+/* .home {
+  background: linear-gradient(
     155.37deg,
     rgb(248, 0, 0) 20%,
     rgb(0, 111, 131) 20% 40%,
@@ -141,4 +141,29 @@ header .fa-bars {
 
 main{
   color: var(--white);
+}*/
+
+@keyframes flash {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.flash {
+	animation: flash 1s infinite;
+}
+
+.navbar .text-green {
+  color: green;
+  font-size: 3em;
+}
+
+table, table td {
+  border: 2px solid black;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
