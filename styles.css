@@ -139,3 +139,22 @@ header .fa-bars {
 main{
   color: var(--white);
 }
+
+@keyframes flash {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.flash {
+	animation: flash 1s infinite;
+}
+
+.navbar .text-green {
+  color: green;
+  font-size: 3em;
+}
+
+table, table td {
+  border: 2px solid black;
+}
