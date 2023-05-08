@@ -199,7 +199,7 @@ header .fa-bars {
 main {
   color: var(--white);
 }
-*/ @keyframes flash {
+@keyframes flash {
   0% {
     opacity: 1;
   }
