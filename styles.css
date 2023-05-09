@@ -81,7 +81,7 @@ header .logo {
   font-weight: bolder;
 }
 
-header .logo span {
+header .logo span:hover {
   color: var(--orange);
 }
 
@@ -89,18 +89,6 @@ header .navbar a {
   font-size: 1.5rem;
   padding: 0 1.5rem;
   color: var(--header__link);
-}
-a {
-  animation: rotate 2s infinite;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 header .navbar a:hover {
