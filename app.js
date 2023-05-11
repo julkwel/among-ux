@@ -27,3 +27,11 @@ board.addEventListener("mousemove", event => {
   }
 });
 
+var audio = document.getElementById("audio");
+audio.volume = 0.5;
+
+var playButton = document.getElementById("playButton");
+playButton.addEventListener("click", function() {
+	audio.play();
+});
+

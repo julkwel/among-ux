@@ -432,3 +432,20 @@ table td {
     transform: rotate(0deg) translateX(100%);
   }
 }
+
+.boat button {
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0.8em;
+  color: white;
+  padding: 3em;
+  transition: transform .2s;
+	transform-origin: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.boat button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
