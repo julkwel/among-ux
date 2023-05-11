@@ -12,6 +12,9 @@
   --fa__bars: rgba(0, 0, 0, 0.3);
   --heading__background: rgba(114, 131, 230, 0.05);
   --header__shadow: rgba(0, 0, 0, 0.1);
+  --blue: blue;
+  --red: red;
+  --green: green;
 }
 
 * {
@@ -27,20 +30,14 @@
 }
 
 .message_error_area {
-  /* background-color: green; */
-  /* color: white; */
-  display: flex;
-  width: 100%;
-  /* padding: 10px 10px; */
+  margin-left: 15%;
   justify-content: center;
-  /* border-radius: 5px; */
 }
 
 .message_error {
-  background-color: green;
-  color: white;
+  background-color: var(--green);
+  color: var(--blue);
   padding: 10px 10px;
-  width: 50%;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -244,11 +241,11 @@ table td {
 }
 
 .first-word {
-  color: blue;
+  color: var(--blue);
 }
 
 .second-word {
-  color: red;
+  color: var(--red);
 }
 
 .social-icon img {
@@ -260,7 +257,7 @@ table td {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(200%);
+    transform: translateX(500%);
   }
 }
 .social-item {
@@ -289,20 +286,40 @@ table td {
 
 .social-item:nth-child(1) {
   --order: 1;
-  animation-duration: 0.8s; /* Changement de la durée de l'animation */
+  animation-duration: 0.8s;
 }
 
 .social-item:nth-child(2) {
   --order: 2;
-  animation-duration: 1s; /* Changement de la durée de l'animation */
+  animation-duration: 1s;
 }
 
 .social-item:nth-child(3) {
   --order: 3;
-  animation-duration: 1.2s; /* Changement de la durée de l'animation */
+  animation-duration: 1.2s;
 }
 
 .social-item:nth-child(4) {
   --order: 4;
-  animation-duration: 1.4s; /* Changement de la durée de l'animation */
+  animation-duration: 1.4s; 
+}
+.paragraphe{
+  display: flex;
+  background-image: url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.paragraphe p {
+  color: var(--white);
+  font-size: 38px;
+}
+.paragraphe p span{
+  color: var(--paragraphe);
+  font-size: 8px;
+}
+.paragraphe img {
+  width: 50px;
+  border-radius: 50%;
 }
