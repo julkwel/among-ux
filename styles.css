@@ -14,6 +14,10 @@
   --header__shadow: rgba(0, 0, 0, 0.1);
 }
 
+body {
+  font-family: Comic Sans MS !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,10 +27,10 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: 0.2s linear;
+  transition: all 2s;
 }
 
-.message_error_area{
+.message_error_area {
   /* background-color: green; */
   /* color: white; */
   display: flex;
@@ -36,7 +40,7 @@
   /* border-radius: 5px; */
 }
 
-.message_error{
+.message_error {
   background-color: green;
   color: white;
   padding: 10px 10px;
@@ -93,6 +97,26 @@ header {
   justify-content: center;
   z-index: 1000;
   box-shadow: 0 0.5rem 1rem var(--header__shadow);
+  animation: shake 2s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+img {
+  filter: grayscale(100%);
 }
 
 .logo {
@@ -153,20 +177,38 @@ header .fa-bars {
   display: none;
 }
 
-#mouse{
+#mouse {
   position: absolute;
   z-index: 2000;
   transform: scale(2);
+  animation: jump 2s infinite;
 }
 
-main{
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+main {
   color: var(--white);
 }
-
 @keyframes flash {
-	0% {opacity: 1;}
-	50% {opacity: 0;}
-	100% {opacity: 1;}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sidebar {
@@ -192,7 +234,7 @@ main{
 }
 
 .flash {
-	animation: flash 1s infinite;
+  animation: flash 1s infinite;
 }
 
 .navbar .text-green {
@@ -200,7 +242,8 @@ main{
   font-size: 3em;
 }
 
-table, table td {
+table,
+table td {
   border: 2px solid black;
 }
 
