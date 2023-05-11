@@ -211,6 +211,28 @@ main {
   }
 }
 
+.sidebar {
+  color: #fff;
+  padding: 2em;
+}
+
+.sidebar ul li {
+  list-style-type: square;
+}
+
+.sidebar ul li a {
+  font-weight: bold;
+  color: #ec5f0d;
+}
+
+.sidebar ul li::marker {
+  color: green;
+}
+
+.content {
+  color: yellow;
+}
+
 .flash {
   animation: flash 1s infinite;
 }
