@@ -17,6 +17,10 @@
   --green: green;
 }
 
+body {
+  font-family: Comic Sans MS !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +30,16 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: 0.2s linear;
+  transition: all 2s;
 }
 
 .message_error_area {
   margin-left: 15%;
+  /* background-color: green; */
+  /* color: white; */
+  display: flex;
+  width: 100%;
+  /* padding: 10px 10px; */
   justify-content: center;
 }
 
@@ -90,6 +99,26 @@ header {
   justify-content: center;
   z-index: 1000;
   box-shadow: 0 0.5rem 1rem var(--header__shadow);
+  animation: shake 2s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+img {
+  filter: grayscale(100%);
 }
 
 .logo {
@@ -154,12 +183,24 @@ header .fa-bars {
   position: absolute;
   z-index: 2000;
   transform: scale(2);
+  animation: jump 2s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 main {
   color: var(--white);
 }
-
 @keyframes flash {
   0% {
     opacity: 1;
@@ -170,6 +211,28 @@ main {
   100% {
     opacity: 1;
   }
+}
+
+.sidebar {
+  color: #fff;
+  padding: 2em;
+}
+
+.sidebar ul li {
+  list-style-type: square;
+}
+
+.sidebar ul li a {
+  font-weight: bold;
+  color: #ec5f0d;
+}
+
+.sidebar ul li::marker {
+  color: green;
+}
+
+.content {
+  color: yellow;
 }
 
 .flash {
