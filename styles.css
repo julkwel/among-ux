@@ -408,3 +408,27 @@ table td {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5em;
 }
+
+.boat {
+  position: absolute;
+  top: 10em;
+  bottom: -50px;
+  left: 50%;
+  width: 100px;
+  height: 50px;
+  background-color: #1abc9c;
+  animation: boatmove 3s linear infinite;
+  transform-origin: bottom right;
+}
+
+@keyframes boatmove {
+  0% {
+    transform: rotate(0deg) translateX(-100%);
+  }
+  50% {
+    transform: rotate(20deg) translateX(50%);
+  }
+  100% {
+    transform: rotate(0deg) translateX(100%);
+  }
+}
