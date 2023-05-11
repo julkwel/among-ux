@@ -124,6 +124,7 @@ img {
 .logo {
   position: fixed;
   top: 0;
+  right: 3em;
   font-size: 3rem;
   color: var(--couleur__code);
   font-weight: bolder;
@@ -400,4 +401,10 @@ table td {
   height: 10px;
   border-radius: 50%;
   background-color: black;
+}
+
+#board h2 {
+  color: #ec5f0d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5em;
 }
