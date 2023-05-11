@@ -161,12 +161,34 @@ header .fa-bars {
 
 main{
   color: var(--white);
-}*/
+}
 
 @keyframes flash {
 	0% {opacity: 1;}
 	50% {opacity: 0;}
 	100% {opacity: 1;}
+}
+
+.sidebar {
+  color: #fff;
+  padding: 2em;
+}
+
+.sidebar ul li {
+  list-style-type: square;
+}
+
+.sidebar ul li a {
+  font-weight: bold;
+  color: #ec5f0d;
+}
+
+.sidebar ul li::marker {
+  color: green;
+}
+
+.content {
+  color: yellow;
 }
 
 .flash {
