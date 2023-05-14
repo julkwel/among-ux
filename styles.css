@@ -89,11 +89,11 @@ section {
 
 header {
   position: fixed;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  left: 2rem;
   right: 0;
   background: radial-gradient(red, yellow, green);
-  padding: 2rem 9%;
+  padding: 0.8rem 9%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,19 +128,36 @@ img {
   font-size: 3rem;
   color: var(--couleur__code);
   font-weight: bolder;
+  display: flex;
+}
+
+header .logo div {
+  margin: 0.8rem;
+  width: fit-content;
 }
 
 .logo span {
   color: var(--orange);
 }
 
-header .navbar a {
-  font-size: 1.5rem;
-  padding: 0 1.5rem;
-  color: var(--header__link);
+header .logo div:hover {
+  color: var(--orange);
 }
-a {
+
+header .logo div:nth-of-type(even){
   animation: rotate 2s infinite;
+}
+
+header .logo div:nth-of-type(even):hover{
+  animation-play-state: paused;
+}
+
+header .logo div:nth-of-type(odd){
+  animation: rotate_invers 2s infinite;
+}
+
+header .logo div:nth-of-type(odd):hover{
+  animation-play-state: paused;
 }
 
 @keyframes rotate {
@@ -150,6 +167,21 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes rotate_invers {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+header .navbar a {
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+  color: var(--header__link);
 }
 
 header .navbar a:hover {
