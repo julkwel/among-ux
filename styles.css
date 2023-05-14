@@ -95,8 +95,16 @@ header .logo div:nth-of-type(even){
   animation: rotate 2s infinite;
 }
 
+header .logo div:nth-of-type(even):hover{
+  animation-play-state: paused;
+}
+
 header .logo div:nth-of-type(odd){
   animation: rotate_invers 2s infinite;
+}
+
+header .logo div:nth-of-type(odd):hover{
+  animation-play-state: paused;
 }
 
 @keyframes rotate {
