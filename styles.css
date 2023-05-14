@@ -124,6 +124,7 @@ img {
 .logo {
   position: fixed;
   top: 0;
+  right: 3em;
   font-size: 3rem;
   color: var(--couleur__code);
   font-weight: bolder;
@@ -385,4 +386,66 @@ table td {
 .paragraphe img {
   width: 50px;
   border-radius: 50%;
+}
+
+#board {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#board h2 {
+  color: #ec5f0d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5em;
+}
+
+.boat {
+  position: absolute;
+  top: 10em;
+  bottom: -50px;
+  left: 50%;
+  width: 100px;
+  height: 50px;
+  background-color: #1abc9c;
+  animation: boatmove 3s linear infinite;
+  transform-origin: bottom right;
+}
+
+@keyframes boatmove {
+  0% {
+    transform: rotate(0deg) translateX(-100%);
+  }
+  50% {
+    transform: rotate(20deg) translateX(50%);
+  }
+  100% {
+    transform: rotate(0deg) translateX(100%);
+  }
+}
+
+.boat button {
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0.8em;
+  color: white;
+  padding: 3em;
+  transition: transform .2s;
+	transform-origin: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.boat button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
