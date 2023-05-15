@@ -252,6 +252,7 @@ main img {
 .sidebar {
   color: #fff;
   padding: 2em;
+  margin-top: 5em;
 }
 
 .sidebar ul li {
