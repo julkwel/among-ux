@@ -1,11 +1,11 @@
-let mouse = document.querySelector('#mouse');
+/*let mouse = document.querySelector('#mouse');
 document.addEventListener('mouseover',(e)=>{
     mouse.style.left = `${e.clientX+2}px`;
     mouse.style.top = `${e.clientY}px`;
     console.log(e.clientX,e.clientX);
-});
+});*/
 
-const board = document.getElementById("board");
+/*const board = document.getElementById("board");
 
 let isDrawing = false;
 
@@ -33,5 +33,35 @@ audio.volume = 0.5;
 var playButton = document.getElementById("playButton");
 playButton.addEventListener("click", function() {
 	audio.play();
+});*/
+
+// Slide
+const slides = document.querySelectorAll('.slide');
+const buttons = document.querySelectorAll('.slider-controls button');
+
+let currentSlide = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = i === index ? 1 : 0;
+  });
+
+  buttons.forEach((button, i) => {
+    button.classList.toggle('active', i === index);
+  });
+
+  currentSlide = index;
+}
+
+buttons.forEach((button, i) => {
+  button.addEventListener('click', () => {
+    showSlide(i);
+  });
 });
 
+function autoPlay() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+setInterval(autoPlay, 3000);
