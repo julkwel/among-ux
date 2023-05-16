@@ -61,7 +61,64 @@
             <a href="#about">Lorem Ipsum</a>
             <a href="#profil">Lorem Ipsum</a>
             <a href="#contact">Lorem Ipsum</a>
+
+            <!-- Sign up button -->
+            <button
+              class="navBtn"
+              onclick="document.getElementById('signup-elmnt').style.display='block'"
+              style="width: auto"
+            >
+              Sign Up
+            </button>
           </nav>
+
+          <!-- Sign up modal -->
+
+          <div id="signup-elmnt" class="modal">
+            <span
+              onclick="document.getElementById('signup-elmnt').style.display='none'"
+              class="close"
+              title="Close Modal"
+              >&times;</span
+            >
+            <form class="modal-content">
+              <div class="container">
+                <h1>Sign Up</h1>
+                <hr />
+                <label for="email"><b>Email</b></label>
+                <input type="text" name="email" value="Enter Email" required />
+
+                <label for="psw"><b>Password</b></label>
+                <input
+                  type="password"
+                  name="psw"
+                  required
+                  value="Enter Password"
+                />
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input
+                  type="password"
+                  name="psw-repeat"
+                  value="Repeat Password"
+                />
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" name="name" value="Enter Name" required />
+
+                <div class="clearfix">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('signup-elmnt').style.display='none'"
+                    class="cancelbtn"
+                  >
+                    Cancel
+                  </button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
 
           <!-- Search box -->
           <div class="search-box">
