@@ -19,6 +19,7 @@
 
 body {
   font-family: Comic Sans MS !important;
+  overflow-x: hidden;
 }
 
 * {
@@ -221,14 +222,6 @@ header .fa-bars {
   }
 }
 
-main {
-  color: var(--white);
-}
-
-main img {
-  height: 200px;
-  width: 250px;
-}
 @keyframes flash {
   0% {
     opacity: 1;
@@ -522,22 +515,23 @@ main img {
 
 .slider-controls {
   position: relative;
-  bottom: 40px;
-  left: 0;
+  bottom: 250px;
+  left: 15px;
   right: 0;
   text-align: center;
 }
 
 .slider-controls button {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: none;
   background-color: #eae0eed3;
-  margin: 0 5px;
+  margin-top: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .slider-controls button.active {
@@ -547,6 +541,7 @@ main img {
 
 main {
   color: #13042b;
+  margin-top: -5em;
 }
 
 main h2 {
@@ -566,5 +561,9 @@ main div p {
   margin-right: 1.8em;
   text-align: right;
   line-height: 40px;
-  width: 250px;
+}
+
+main img {
+  margin-top: -1em;
+  max-width: 500px;
 }
