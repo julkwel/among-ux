@@ -142,19 +142,19 @@ header .logo div:hover {
   color: var(--orange);
 }
 
-header .logo div:nth-of-type(even){
+header .logo div:nth-of-type(even) {
   animation: rotate 2s infinite;
 }
 
-header .logo div:nth-of-type(even):hover{
+header .logo div:nth-of-type(even):hover {
   animation-play-state: paused;
 }
 
-header .logo div:nth-of-type(odd){
+header .logo div:nth-of-type(odd) {
   animation: rotate_invers 2s infinite;
 }
 
-header .logo div:nth-of-type(odd):hover{
+header .logo div:nth-of-type(odd):hover {
   animation-play-state: paused;
 }
 
@@ -403,11 +403,11 @@ table td {
 
 .social-item:nth-child(4) {
   --order: 4;
-  animation-duration: 1.4s; 
+  animation-duration: 1.4s;
 }
-.paragraphe{
+.paragraphe {
   display: flex;
-  background-image: url('./background.jpg');
+  background-image: url("./background.jpg");
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -417,7 +417,7 @@ table td {
   color: var(--white);
   font-size: 38px;
 }
-.paragraphe p span{
+.paragraphe p span {
   color: var(--paragraphe);
   font-size: 8px;
 }
@@ -445,7 +445,7 @@ table td {
 
 #board h2 {
   color: #ec5f0d;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2.5em;
 }
 
@@ -479,8 +479,8 @@ table td {
   font-size: 0.8em;
   color: white;
   padding: 3em;
-  transition: transform .2s;
-	transform-origin: center;
+  transition: transform 0.2s;
+  transform-origin: center;
   width: 100%;
   font-weight: bold;
 }

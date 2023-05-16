@@ -1,8 +1,8 @@
-let mouse = document.querySelector('#mouse');
-document.addEventListener('mouseover',(e)=>{
-    mouse.style.left = `${e.clientX+2}px`;
-    mouse.style.top = `${e.clientY}px`;
-    console.log(e.clientX,e.clientX);
+let mouse = document.querySelector("#mouse");
+document.addEventListener("mouseover", (e) => {
+  mouse.style.left = `${e.clientX + 2}px`;
+  mouse.style.top = `${e.clientY}px`;
+  console.log(e.clientX, e.clientX);
 });
 
 const board = document.getElementById("board");
@@ -17,7 +17,7 @@ board.addEventListener("mouseup", () => {
   isDrawing = false;
 });
 
-board.addEventListener("mousemove", event => {
+board.addEventListener("mousemove", (event) => {
   if (isDrawing) {
     const circle = document.createElement("div");
     circle.classList.add("circle");
@@ -31,7 +31,6 @@ var audio = document.getElementById("audio");
 audio.volume = 0.5;
 
 var playButton = document.getElementById("playButton");
-playButton.addEventListener("click", function() {
-	audio.play();
+playButton.addEventListener("click", function () {
+  audio.play();
 });
-
