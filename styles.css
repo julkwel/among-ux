@@ -278,7 +278,7 @@ main img {
 .flex {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer {
@@ -482,6 +482,10 @@ main img {
   padding: 1em;
 }
 
+.navbar {
+  padding: 1em 4em;
+}
+
 .navbar .nav-left a {
   color: white;
   margin-right: 1em;
@@ -517,10 +521,11 @@ main img {
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .slider-controls button {
@@ -529,13 +534,37 @@ main img {
   height: 15px;
   border-radius: 50%;
   border: none;
-  background-color: #888;
+  background-color: #eae0eed3;
   margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .slider-controls button.active {
-  background-color: #333;
+  background-color: #4a2585ea;
 }
 /* END SLIDER */
+
+main {
+  color: #13042b;
+}
+
+main h2 {
+  margin-right: 1em;
+  text-align: right;
+}
+
+main .btn-style {
+  background-color: #13042b;
+  border-radius: 10px / 30px;
+  color: white;
+  font-size: 1.5em;
+  padding: 12px 22px;
+}
+
+main div p {
+  margin-right: 1.8em;
+  text-align: right;
+  line-height: 40px;
+  width: 250px;
+}
