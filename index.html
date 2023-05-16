@@ -79,6 +79,15 @@
             >
               Logout
             </button>
+
+            <!-- Login -->
+            <button
+              class="navBtn"
+              onclick="document.getElementById('login-elmnt').style.display='block'"
+              style="width: auto"
+            >
+              login
+            </button>
           </nav>
 
           <!-- Sign up modal -->
@@ -127,6 +136,72 @@
                 </div>
               </div>
             </form>
+          </div>
+
+          <!-- Login modal -->
+          <div id="login-elmnt" class="modal">
+            <span
+              onclick="document.getElementById('signup-elmnt').style.display='none'"
+              class="close"
+              title="Close Modal"
+              >&times;</span
+            >
+            <div class="container">
+              <form action="/action_page.php">
+                <div class="row">
+                  <h2 style="text-align: center">
+                    Login with Social Media or Manually
+                  </h2>
+                  <div class="vl">
+                    <span class="vl-innertext">or</span>
+                  </div>
+
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Username"
+                      required
+                    />
+                    <a href="#" class="twitter btn">
+                      <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                    </a>
+                    <a href="#" class="google btn"
+                      ><i class="fa fa-google fa-fw"> </i> Login with Google+
+                    </a>
+                  </div>
+
+                  <div class="col">
+                    <div class="hide-md-lg">
+                      <p>Or sign in manually:</p>
+                    </div>
+
+                    <a href="#" class="fb btn">
+                      <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                    </a>
+
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                      required
+                    />
+                    <input type="submit" value="Login" />
+                  </div>
+                  <div class="col">
+                    <a href="#" style="color: white">Forgot password?</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="bottom-container">
+              <div class="row">
+                <div class="col">
+                  <a href="#" style="color: white" class="btn">Sign up</a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Search box -->

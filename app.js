@@ -52,10 +52,12 @@ document.body.style.visibility = "hidden";
 // =============================================================================
 // Sign up modal function
 // =============================================================================
-var modal = document.getElementById("signup-elmnt");
+var modal = document.querySelectorAll("#signup-elmnt, #login-elmnt");
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modal[0]) {
+    modal[0].style.display = "none";
+  } else if (event.target == modal[1]) {
+    modal[1].style.display = "none";
   }
 };
