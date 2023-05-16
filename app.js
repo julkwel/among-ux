@@ -34,4 +34,15 @@ var playButton = document.getElementById("playButton");
 playButton.addEventListener("click", function() {
 	audio.play();
 });
+const emailField = document.querySelector('#email');
+const subjectlField = document.querySelector('#subject');
+const btnSubmitContact = document.querySelector('#submitContact');
+btnSubmitContact.addEventListener('click',(e) => {
+  e.preventDefault();
+  const email = emailField.value;
+  const subject = subjectlField.value;
+  if(!email || !subject) alert('champs obligatoire!! :-(');
+  else alert('envoyé');
+})
+
 
