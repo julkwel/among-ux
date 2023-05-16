@@ -34,3 +34,17 @@ var playButton = document.getElementById("playButton");
 playButton.addEventListener("click", function () {
   audio.play();
 });
+
+// =============================================================================
+// Loading function
+// =============================================================================
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    const loadingPage = document.querySelector(".loading");
+    loadingPage.style.display = "none";
+    document.body.style.visibility = "visible";
+  }, 5000);
+});
+
+document.body.style.visibility = "hidden";
