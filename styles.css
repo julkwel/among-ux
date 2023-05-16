@@ -120,13 +120,9 @@ img {
 }
 
 .logo {
-  position: fixed;
-  top: 0;
-  right: 3em;
-  font-size: 3rem;
-  color: var(--couleur__code);
+  color: #e8b8d3;
   font-weight: bolder;
-  display: flex;
+  font-size: 2em;
 }
 
 header .logo div {
@@ -281,11 +277,6 @@ main img {
 .navbar .text-green {
   color: green;
   font-size: 3em;
-}
-
-table,
-table td {
-  border: 2px solid black;
 }
 
 .flex {
@@ -488,4 +479,19 @@ table td {
 .boat button:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.bg-blue {
+  background-color: #1e003da3;
+  padding: 1em;
+}
+
+.navbar .nav-left a {
+  color: white;
+  margin-right: 1em;
+}
+
+.navbar .nav-left a:hover {
+  cursor: progress;
+  opacity: 0.1;
 }
