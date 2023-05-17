@@ -58,6 +58,17 @@ buttons.forEach((button, i) => {
     showSlide(i);
   });
 });
+const emailField = document.querySelector('#email');
+const subjectlField = document.querySelector('#subject');
+const btnSubmitContact = document.querySelector('#submitContact');
+btnSubmitContact.addEventListener('click',(e) => {
+  e.preventDefault();
+  const email = emailField.value;
+  const subject = subjectlField.value;
+  if(!email || !subject) alert('champs obligatoire!! :-(');
+  else alert('envoyé');
+})
+
 
 function autoPlay() {
   currentSlide = (currentSlide + 1) % slides.length;
@@ -65,3 +76,21 @@ function autoPlay() {
 }
 
 setInterval(autoPlay, 3000);
+
+
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+scrollToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
