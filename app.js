@@ -44,7 +44,25 @@ btnSubmitContact.addEventListener('click',(e) => {
   const subject = subjectlField.value;
   if(!email || !subject) alert('champs obligatoire!! :-(');
   else alert('envoyé');
-})*/
+})
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+scrollToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+*/
 
 // Slide
 const slides = document.querySelectorAll('.slide');
@@ -76,21 +94,3 @@ function autoPlay() {
 }
 
 setInterval(autoPlay, 1000);
-
-
-const scrollToTopButton = document.getElementById("scrollToTopButton");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollToTopButton.style.display = "block";
-  } else {
-    scrollToTopButton.style.display = "none";
-  }
-});
-
-scrollToTopButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
