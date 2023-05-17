@@ -35,6 +35,17 @@ playButton.addEventListener("click", function() {
 	audio.play();
 });*/
 
+/*const emailField = document.querySelector('#email');
+const subjectlField = document.querySelector('#subject');
+const btnSubmitContact = document.querySelector('#submitContact');
+btnSubmitContact.addEventListener('click',(e) => {
+  e.preventDefault();
+  const email = emailField.value;
+  const subject = subjectlField.value;
+  if(!email || !subject) alert('champs obligatoire!! :-(');
+  else alert('envoyé');
+})*/
+
 // Slide
 const slides = document.querySelectorAll('.slide');
 const buttons = document.querySelectorAll('.slider-controls button');
@@ -58,24 +69,13 @@ buttons.forEach((button, i) => {
     showSlide(i);
   });
 });
-const emailField = document.querySelector('#email');
-const subjectlField = document.querySelector('#subject');
-const btnSubmitContact = document.querySelector('#submitContact');
-btnSubmitContact.addEventListener('click',(e) => {
-  e.preventDefault();
-  const email = emailField.value;
-  const subject = subjectlField.value;
-  if(!email || !subject) alert('champs obligatoire!! :-(');
-  else alert('envoyé');
-})
-
 
 function autoPlay() {
   currentSlide = (currentSlide + 1) % slides.length;
   showSlide(currentSlide);
 }
 
-setInterval(autoPlay, 3000);
+setInterval(autoPlay, 1000);
 
 
 const scrollToTopButton = document.getElementById("scrollToTopButton");
