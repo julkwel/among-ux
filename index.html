@@ -8,108 +8,81 @@
   <script src="app.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-  <div class="home">
-    <div class="flex">
-      <a href="#" class="logo">Among-UX<span>.</span></a>
-      <header>
-        <input type="checkbox" name="" id="toggler" />
-        <label for="toggler" class="fas fa-bars"></label>
-        <nav class="navbar">
-          <table>
-            <tr>
-              <td><a href="#home">Homme (ackeuil)</a></td>
-              <td colspan="2">
-                <div class="flash">
-                  Welkome to E-balgue dezign
-                  <img src="./sary.png" alt="pciture" />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><a href="#about" class="text-green">Euhbot</a></td>
-              <td><a href="#profil">Praufil</a></td>
-              <td><a href="#contact">Con takita</a></td>
-            </tr>
-          </table>
-        </nav>
-        <a href="#" class="logo">
-          <div>A</div>
-          <div>m</div>
-          <div>o</div>
-          <div>n</div>
-          <div>g</div>
-          <div>-</div>
-          <div>U</div>
-          <div>X</div>
-          <div>.</div>
-        </a>
-
-        <nav class="navbar">
-          <a href="#home">Lorem Ipsum</a>
-          <a href="#about">Lorem Ipsum</a>
-          <a href="#profil">Lorem Ipsum</a>
-          <a href="#contact">Lorem Ipsum</a>
-        </nav>
-        <!-- End navbar -->
-
-        <!-- Begin slides -->
-        <div class="slider">
-          <div class="slide">
-            <img src="./slide-1.jpg" alt="Slide 1">
-          </div>
-          <div class="slide">
-            <img src="./slide-2.jpg" alt="Slide 2">
-          </div>
-          <div class="slide">
-            <img src="./slide-3.jpg" alt="Slide 3">
-          </div>
+  
+  <div class="container">
+      <!-- Begin navbar -->
+      <nav class="navbar flex bg-blue">
+        <div class="nav-left">
+            <a href="#contact">Contact Us</a>
+            <a href="#about">About</a></td>
+            <a href="#home">Home</a>
         </div>
-        <div class="slider-controls">
-          <button class="active"></button>
-          <button></button>
-          <button></button>
+        <div class="nav-right">
+          <a href="#" class="logo">among-ux</a>
         </div>
-        <!-- End slides -->
+      </nav>
+      <!-- End navbar -->
+
+      <!-- Begin slides -->
+      <div class="slider">
+        <div class="slide">
+          <img src="./slide-1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="./slide-2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+          <img src="./slide-3.jpg" alt="Slide 3">
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+      </div>
+      <!-- End slides -->
+  </div>
+  
+  <!-- Begin main content -->
+  <main>
+    <div id="about">
+      <div class="flex">
+        <div class="left-content">
+          <img src="./pic-1.jpg" alt="pic 1">
+        </div>
+        <div class="right-content">
+          <h2>
+            <button class="btn-style">About us</button>
+          </h2>
+          <p>
+            We are the world <br/>
+            We are the children
+          </p>
+        </div>
+      </div>
     </div>
-    
-    <!-- Begin main content -->
-    <main>
-      <div id="about">
-        <div class="flex">
-          <div class="left-content">
-            <img src="./pic-1.jpg" alt="pic 1">
-          </div>
-          <div class="right-content">
-            <h2>
-              <button class="btn-style">About us</button>
-            </h2>
-            <p>
-              We are the world <br/>
-              We are the children
-            </p>
-          </div>
+    <div id="contact">
+      <div class="flex">
+        <div class="left-content">
+          <img src="./pic-2.jpg" alt="pic 2">
+        </div>
+        <div class="right-content">
+          <h2>
+            <button class="btn-style">Contact</button>
+          </h2>
+          <p>
+            Post to e-blague <br/>
+            Let's discuss on <a href="https://github.com/julkwel/among-ux" target="_blank">Among-ux repo</a>
+          </p>
         </div>
       </div>
-      <div id="contact">
-        <div class="flex">
-          <div class="left-content">
-            <img src="./pic-2.jpg" alt="pic 2">
-          </div>
-          <div class="right-content">
-            <h2>
-              <button class="btn-style">Contact</button>
-            </h2>
-            <p>
-              Post to e-blague <br/>
-              Let's discuss on <a href="https://github.com/julkwel/among-ux" target="_blank">Among-ux repo</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </main>
-    <!-- End main content -->
-  </body>
+    </div>
+    </div>
+  </main>
+  <!-- End main content -->
+  
+</body>
+
 </html>
