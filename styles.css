@@ -132,7 +132,6 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-  color: var(--orange);
   border-bottom: #1e003d solid 10px;
 }
 
