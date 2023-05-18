@@ -64,10 +64,10 @@ section {
 header {
   position: fixed;
   top: 0;
-  left: 2rem;
+  left: 0;
   right: 0;
-  background: radial-gradient(red, yellow, green);
-  padding: 0.8rem 9%;
+  background: #000c52;
+  padding: 0.8rem 1%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,7 +77,7 @@ header {
 
 header .logo {
   font-size: 3rem;
-  color: var(--couleur__code);
+  color: white;
   font-weight: bolder;
   display: flex;
 }
@@ -85,6 +85,7 @@ header .logo {
 header .logo div {
   margin: 0.8rem;
   width: fit-content;
+  background: rgb(4, 109, 255, 0.5);
 }
 
 header .logo div:hover {
@@ -132,7 +133,8 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-  border-bottom: #1e003d solid 10px;
+  color: var(--orange);
+  border-bottom: var(--orange) solid 10px;
 }
 
 .icon {
