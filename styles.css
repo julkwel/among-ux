@@ -61,12 +61,17 @@ section {
   background: var(--orange);
 }
 
-header {
+header{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: #000c52;
+  background: red;
+  width: 100%;
+}
+
+header> .font{
+  background: rgb(0, 12, 82, 0.8);
   padding: 0.8rem 1%;
   display: flex;
   align-items: center;
@@ -157,6 +162,21 @@ header .fa-bars {
   cursor: pointer;
   border: 0.1rem solid var(--fa__bars);
   display: none;
+}
+
+header > .back{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 12, 82);
+  overflow: hidden;
+  z-index: -2000;
+}
+
+#video {
+  margin-top: -40%;
+  width: 100%;
 }
 
 main{

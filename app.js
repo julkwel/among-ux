@@ -1,4 +1,4 @@
-let video = document.getElementById('videoElement');
+let video = document.getElementById('video');
 const setUpCamera = () => {
     if(navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({video: true})
