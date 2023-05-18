@@ -656,7 +656,7 @@ main img {
 #demande-btn:hover {
   background-color: #cccccc;
 }
-input[type=text], select, textarea {
+input[type=text], input[type=password], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -665,15 +665,6 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-}
-
-input[type=submit] {
-  background-color: red;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 input[type=submit]:hover {
@@ -701,4 +692,92 @@ input[type=submit]:hover {
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+#about .flex .right-content, #contact .flex .right-content {
+  background-color: #f7ca29;
+  padding: 3.6em;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-left {
+  left: 0;
+}
+
+.modal-right {
+  right: 0;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main #btn-signin, main #btn-signup {
+  background-color: #f7ca29;;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 2;
+}
+
+main button img {
+  height: 50px;
+  width: 50px;
+}
+
+main #btn-signin img {
+  margin-top: 1px;
+  margin-bottom: -3px;
+}
+
+main #btn-signin {
+  left: 4em;
+  top: 1em;
+}
+
+main #btn-signup img {
+  margin-top: 1px;
+  margin-bottom: -3px;
+}
+
+main #btn-signup {
+  border-radius: 30%;
+  left: 10em;
+  top: 1em;
+}
+
+form .btn-submit {
+  background-color: #f7ca29;
+  color: white;
+  padding: 12px 16px;
+  width: 100%;
 }

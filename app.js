@@ -94,3 +94,41 @@ function autoPlay() {
 }
 
 setInterval(autoPlay, 1000);
+
+/* MODAL */
+var signinModalBtn = document.getElementById("btn-signin");
+var signinModal = document.getElementById("signinModal");
+var signinCloseBtn = document.getElementsByClassName("close")[0];
+
+signinModalBtn.addEventListener("click", function() {
+  signinModal.style.display = "block";
+});
+
+signinCloseBtn.addEventListener("click", function() {
+  signinModal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == signinModal) {
+    signinModal.style.display = "none";
+  }
+});
+
+var signupModalBtn = document.getElementById("btn-signup");
+var signupModal = document.getElementById("signupModal");
+var signupCloseBtn = document.getElementsByClassName("close")[1];
+
+signupModalBtn.addEventListener("click", function() {
+  signupModal.style.display = "block";
+});
+
+signupCloseBtn.addEventListener("click", function() {
+  signupModal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == signupModal) {
+    signupModal.style.display = "none";
+  }
+});
+
