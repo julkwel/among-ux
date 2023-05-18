@@ -158,12 +158,6 @@ header .fa-bars {
   display: none;
 }
 
-#mouse{
-  position: absolute;
-  z-index: 2000;
-  transform: scale(2);
-}
-
 main{
   color: var(--white);
 }
