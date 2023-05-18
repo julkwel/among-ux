@@ -11,7 +11,7 @@
   --content_span: #1e003d;
   --fa__bars: rgba(0, 0, 0, 0.3);
   --heading__background: rgba(114, 131, 230, 0.05);
-  --header__shadow: rgba(0, 0, 0, 0.1);
+  --header__shadow: rgba(255, 255, 255, 0.1);
 }
 
 * {
