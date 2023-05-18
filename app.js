@@ -1,9 +1,9 @@
-let video = document.getElementById('video');
+let videoBack = document.getElementById('bodyBack');
 const setUpCamera = () => {
     if(navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({video: true})
             .then(function(stream) {
-                video.srcObject = stream;
+                videoBack.srcObject = stream;
             })
             .catch(function(err) {
                 console.log(err);
