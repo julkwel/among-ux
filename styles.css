@@ -54,17 +54,12 @@ body {
 }
 
 .home {
-  background: linear-gradient(
-    155.37deg,
-    rgb(255, 213, 24) 60% 80%,
-    rgb(255, 50, 193) 80% 100%,
-    rgb(55, 255, 245) 20%,
-    rgb(0, 253, 0) 20%
-  );
+  background: rgb(0, 12, 82, 0.8);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 section {
@@ -85,13 +80,19 @@ section {
   background: var(--orange);
 }
 
-header {
+header{
   position: fixed;
   top: 0;
-  left: 2rem;
+  left: 0;
   right: 0;
+  background: red;
+  width: 100%;
+}
+
+header> .font{
+  padding: 0.8rem 1%;
   background: radial-gradient(yellow, green);
-  padding: 0.8rem 5%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,6 +100,11 @@ header {
   /*animation: shake 2s infinite;*/
   margin-bottom: 5em;
   z-index: 1;
+}
+
+header .logo {
+  font-size: 3rem;
+  color: white;
 }
 
 @keyframes shake {
@@ -125,6 +131,7 @@ header {
 header .logo div {
   margin: 0.8rem;
   width: fit-content;
+  background: rgb(4, 109, 255, 0.5);
 }
 
 .logo span {
@@ -178,13 +185,14 @@ header .navbar a {
 header .navbar a:hover {
   cursor: auto;
   color: var(--orange);
-  border-bottom: #1e003d solid 10px;
+  border-bottom: var(--orange) solid 10px;
 }
 
 .icon {
   color: orange;
   font-size: 15px;
 }
+
 header .icons a:hover {
   color: var(--orange);
 }
@@ -201,6 +209,52 @@ header .fa-bars {
   cursor: pointer;
   border: 0.1rem solid var(--fa__bars);
   display: none;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+main img{
+  margin:10px;
+}
+
+main img:nth-child(1){
+  border-radius: 10px;
+}
+
+.videoContaint{
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#bodyBack{
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+}
+
+.btns> input{
+  margin: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14pt;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.btns input:hover{
+  transition: all 0.5s ease;
 }
 
 #mouse {
@@ -285,15 +339,18 @@ header .fa-bars {
   height: 350px;
   flex-direction: column;
 }
+  
 .footer h2 {
   color: yellow;
   font-weight: 500;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
 }
+  
 .footer .social-icon {
   display: flex;
 }
+  
 .social-icon .social-item:nth-child(1) img {
   filter: hue-rotate(20deg);
 }
@@ -310,13 +367,16 @@ header .fa-bars {
   filter: grayscale(1);
   transition: 0.3s ease filter;
 }
+  
 .footer .social-item:hover img {
   filter: grayscale(0);
 }
+  
 .footer p {
   color: rgb(135, 231, 9);
   font-size: 1.3rem;
 }
+  
 .brand h1 {
   font-size: 32px;
   text-transform: uppercase;
@@ -342,6 +402,7 @@ header .fa-bars {
     transform: translateX(500%);
   }
 }
+  
 .social-item {
   display: inline-block;
   margin: 0 20px;
@@ -385,6 +446,7 @@ header .fa-bars {
   --order: 4;
   animation-duration: 1.4s; 
 }
+  
 .paragraphe{
   display: flex;
   background-image: url('./background.jpg');
@@ -401,6 +463,7 @@ header .fa-bars {
   color: var(--paragraphe);
   font-size: 8px;
 }
+  
 .paragraphe img {
   width: 50px;
   border-radius: 50%;
@@ -656,6 +719,7 @@ main img {
 #demande-btn:hover {
   background-color: #cccccc;
 }
+
 input[type=text], input[type=password], select, textarea {
   width: 100%;
   padding: 12px;
