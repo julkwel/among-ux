@@ -64,6 +64,35 @@ playButton.addEventListener("click", function() {
 	audio.play();
 });*/
 
+/*const emailField = document.querySelector('#email');
+const subjectlField = document.querySelector('#subject');
+const btnSubmitContact = document.querySelector('#submitContact');
+btnSubmitContact.addEventListener('click',(e) => {
+  e.preventDefault();
+  const email = emailField.value;
+  const subject = subjectlField.value;
+  if(!email || !subject) alert('champs obligatoire!! :-(');
+  else alert('envoyé');
+})
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+scrollToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+*/
+
 // Slide
 const slides = document.querySelectorAll('.slide');
 const buttons = document.querySelectorAll('.slider-controls button');
@@ -87,39 +116,48 @@ buttons.forEach((button, i) => {
     showSlide(i);
   });
 });
-const emailField = document.querySelector('#email');
-const subjectlField = document.querySelector('#subject');
-const btnSubmitContact = document.querySelector('#submitContact');
-btnSubmitContact.addEventListener('click',(e) => {
-  e.preventDefault();
-  const email = emailField.value;
-  const subject = subjectlField.value;
-  if(!email || !subject) alert('champs obligatoire!! :-(');
-  else alert('envoyé');
-})
-
 
 function autoPlay() {
   currentSlide = (currentSlide + 1) % slides.length;
   showSlide(currentSlide);
 }
 
-setInterval(autoPlay, 3000);
+setInterval(autoPlay, 1000);
 
+/* MODAL */
+var signinModalBtn = document.getElementById("btn-signin");
+var signinModal = document.getElementById("signinModal");
+var signinCloseBtn = document.getElementsByClassName("close")[0];
 
-const scrollToTopButton = document.getElementById("scrollToTopButton");
+signinModalBtn.addEventListener("click", function() {
+  signinModal.style.display = "block";
+});
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollToTopButton.style.display = "block";
-  } else {
-    scrollToTopButton.style.display = "none";
+signinCloseBtn.addEventListener("click", function() {
+  signinModal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == signinModal) {
+    signinModal.style.display = "none";
   }
 });
 
-scrollToTopButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+var signupModalBtn = document.getElementById("btn-signup");
+var signupModal = document.getElementById("signupModal");
+var signupCloseBtn = document.getElementsByClassName("close")[1];
+
+signupModalBtn.addEventListener("click", function() {
+  signupModal.style.display = "block";
 });
+
+signupCloseBtn.addEventListener("click", function() {
+  signupModal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == signupModal) {
+    signupModal.style.display = "none";
+  }
+});
+
