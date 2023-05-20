@@ -92,6 +92,25 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 */
+window.addEventListener("scroll", function() {
+  var scrollToBottomBtn = document.getElementById("scrollToBottomBtn");
+  var scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+  var windowHeight = window.innerHeight;
+  if (scrollHeight - windowHeight - (document.documentElement.scrollTop || document.body.scrollTop) > 100) {
+    scrollToBottomBtn.style.display = "block";
+  } else {
+    scrollToBottomBtn.style.display = "none";
+  }
+});
+
+document.getElementById("scrollToBottomBtn").addEventListener("click", function() {
+  var scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+  window.scrollTo({
+    top: scrollHeight,
+    behavior: "smooth"
+  });
+});
+
 
 // Slide
 const slides = document.querySelectorAll('.slide');

@@ -845,3 +845,20 @@ form .btn-submit {
   padding: 12px 16px;
   width: 100%;
 }
+#scrollToBottomBtn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #13042b;
+  color: #f7ca29;
+  border: none;
+  border-radius: 4px;
+}
+
+#scrollToBottomBtn:hover {
+  background-color: #333;
+}
