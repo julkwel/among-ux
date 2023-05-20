@@ -180,3 +180,9 @@ window.addEventListener("click", function(event) {
   }
 });
 
+window.addEventListener('DOMContentLoaded', function() {
+  var footer = document.getElementById('footer');
+  setTimeout(function() {
+    footer.style.display = 'none';
+  }, 10000); // 10 secondes (10000 millisecondes)
+});
