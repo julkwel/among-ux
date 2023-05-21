@@ -557,6 +557,7 @@ main img:nth-child(1){
   position: fixed;
   bottom: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 /* BEGIN SLIDER */
@@ -902,4 +903,12 @@ form .btn-submit {
 .footer-column p {
   margin: 0;
   line-height: 1.5;
+}
+
+.navbar #bodyBack{
+  position: absolute;
+  width: 100%;
+  top: -200px;
+  z-index: -100000;
+  opacity: 0.3;
 }
