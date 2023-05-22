@@ -65,14 +65,24 @@ window.addEventListener('wheel', function(event) {
 const informationDiv = document.querySelector('.information');
 const switchBtn = informationDiv.querySelector('#switchBtn');
 
+let isMovingLeft = true;
+const informationWidth = informationDiv.offsetWidth;
+const buttonWidth = switchBtn.offsetWidth;
+
 switchBtn.addEventListener('mouseover', () => {
-  const informationWidth = informationDiv.offsetWidth;
-  const buttonWidth = switchBtn.offsetWidth;
+  switchBtn.style.transition = 'left 0.5s, right 0.5s';
 
-  const maxLeft = informationWidth - buttonWidth;
+  if (isMovingLeft) {
+    switchBtn.style.left = 'auto';
+    switchBtn.style.right = `${informationWidth - buttonWidth}px`;
+    isMovingLeft = false;
+  } else {
+    switchBtn.style.left = `${informationWidth - buttonWidth}px`;
+    switchBtn.style.right = 'auto';
+    isMovingLeft = true;
+  }
+});
 
-  const randomLeft = Math.floor(Math.random() * maxLeft);
-
-  switchBtn.style.left = `${randomLeft}px`;
+switchBtn.addEventListener('click', () => {
   window.location.href = 'https://github.com/julkwel/among-ux';
 });

@@ -143,6 +143,11 @@ body {
   background-image: url('./pic-2.jpg');
 }
 
+.text-yellow {
+  color: #f8cb10;
+  cursor: all-scroll;
+}
+
 .btn-primary {
   background-color: #f8cb10;
   color: #fff;
