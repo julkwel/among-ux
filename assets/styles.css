@@ -107,6 +107,7 @@ body {
   border-radius: 20px;
   padding: 1em;
   position: relative;
+  width: 50%;
   z-index: 3;
 }
 
@@ -117,6 +118,12 @@ body {
 
 .information p {
   color: #4c4c4e;
+  line-height: 30px;
+}
+
+.information .text-stylized {
+  color: #f8cb10;
+  font-weight: bold;
 }
 
 .bg-1, .bg-2 {
@@ -134,4 +141,15 @@ body {
 
 .bg-2 {
   background-image: url('./pic-2.jpg');
+}
+
+.btn-primary {
+  background-color: #f8cb10;
+  color: #fff;
+  padding: 12px 20px;
+  position: absolute;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
 }

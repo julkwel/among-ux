@@ -13,7 +13,7 @@ viewLastUpdate.onclick = function() {
   window.location.reload();
 }*/
 
-// scroll to another div
+// Scroll to another div
 document.addEventListener("DOMContentLoaded", function() {
   var sections = document.getElementsByClassName("section");
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// reverse mouse scoll
+// Reverse mouse scoll
 window.addEventListener('wheel', function(event) {
   event.preventDefault();
 
@@ -61,5 +61,18 @@ window.addEventListener('wheel', function(event) {
   });
 });
 
+// set random position for a button
+const informationDiv = document.querySelector('.information');
+const switchBtn = informationDiv.querySelector('#switchBtn');
 
+switchBtn.addEventListener('mouseover', () => {
+  const informationWidth = informationDiv.offsetWidth;
+  const buttonWidth = switchBtn.offsetWidth;
 
+  const maxLeft = informationWidth - buttonWidth;
+
+  const randomLeft = Math.floor(Math.random() * maxLeft);
+
+  switchBtn.style.left = `${randomLeft}px`;
+  window.location.href = 'https://github.com/julkwel/among-ux';
+});
