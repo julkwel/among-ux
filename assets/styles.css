@@ -145,7 +145,7 @@ body {
 
 .text-yellow {
   color: #f8cb10;
-  cursor: all-scroll;
+  cursor: pointer;
 }
 
 .btn-primary {
