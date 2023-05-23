@@ -158,3 +158,27 @@ body {
 .btn-primary:hover {
   cursor: pointer;
 }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: #f8cb10;
+  font-weight: bold;
+  margin: 1em 2em;
+}
+
+li img {
+  border-radius: 50%;
+}
+
+.contributors {
+  padding: 2em;
+}

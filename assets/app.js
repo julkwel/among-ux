@@ -86,3 +86,22 @@ switchBtn.addEventListener('mouseover', () => {
 switchBtn.addEventListener('click', () => {
   window.location.href = 'https://github.com/julkwel/among-ux';
 });
+
+// Fetch the contributors data from the GitHub API
+fetch('https://api.github.com/repos/julkwel/among-ux/contributors')
+    .then(response => response.json())
+    .then(data => {
+        // Select the list element
+        const contributorsList = document.getElementById('contributors-list');
+
+        // Loop through the contributor data and create list items
+        data.forEach(contributor => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <img src="${contributor.avatar_url}" alt="${contributor.login}" width="50">
+                <a href="${contributor.html_url}" target="_blank">${contributor.login}</a>
+            `;
+            contributorsList.appendChild(listItem);
+        });
+    })
+    .catch(error => console.error(error));
