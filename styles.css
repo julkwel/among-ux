@@ -27,13 +27,7 @@
 }
 
 .home {
-  background: linear-gradient(
-    155.37deg,
-    rgb(248, 0, 0) 15.63%,
-    rgb(0, 111, 131) 29.63%,
-    rgb(55, 0, 128) 51.55%,
-    rgb(0, 253, 0) 90.85%
-  );
+  background: #f1f1f1;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -63,13 +57,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
-    155.37deg,
-    rgb(248, 0, 0) 15.63%,
-    rgb(0, 111, 131) 29.63%,
-    rgb(55, 0, 128) 51.55%,
-    rgb(0, 253, 0) 90.85%
-  );
+  background: #333;
   padding: 2rem 9%;
   display: flex;
   align-items: center;
@@ -89,12 +77,13 @@ header .logo span {
 }
 
 header .navbar a {
-  font-size: 2rem;
-  padding: 0 1.5rem;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
   color: var(--header__link);
 }
 a {
   animation: rotate 2s infinite;
+  font-size: 0.5rem;
 }
 
 @keyframes rotate {
@@ -133,10 +122,30 @@ header .fa-bars {
 }
 
 header .navbar .active {
-  border: 15px solid var(--header__link);
-  border-radius: 100%;
+  border-bottom: 5px solid var(--header__link);
 }
 
 header .navbar .active:hover {
   border-color: var(--orange);
+}
+
+.home {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+main h1 {
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #fff;
+  margin: 2rem 0;
+  box-shadow: 2px 3px 5px #ccc;
+}
+
+main p {
+  color: #333;
 }
