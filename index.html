@@ -4,175 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AMONG-UX</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./assets/styles.css"/>
   <script src="app.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
 </head>
 <body>
-  
-  <div class="container">
-      <!-- Begin navbar -->
-      <nav class="navbar flex bg-blue">
-        <video autoplay id="bodyBack"></video>
-        <div class="nav-left">
-            <a href="#contact">Contact Us</a>
-            <a href="#about">About</a></td>
-            <a href="#home">Home</a>
-        </div>
-      <div class="btns">
-          <input type="button" value="Get start">
-          <input type="button" value="Discovery">
-          <input type="button" value="Get link">
-          <input type="button" value="Hidden adds">
-          <input type="button" value="Accept cookies">
-          <input type="button" value="Reset all">
-        </div>
-      </header>
-
-      <main>
-        <img src="./body.gif" alt="Une erreur c'est produit lors du chargement du page 😆">
-        <img src="boooody.png" alt="Une erreur c'est produit lors du chargement du page 😆">
-        <div>
-          <p>&copy; 2023 Mon site - Tous droits réservés</p>
-        </div>
-      </nav>
-      <!-- End navbar -->
-
-      <!-- Begin slides -->
-      <div class="slider">
-        <div class="slide">
-          <img src="./slide-1.jpg" alt="Slide 1">
-        </div>
-        <div class="slide">
-          <img src="./slide-2.jpg" alt="Slide 2">
-        </div>
-        <div class="slide">
-          <img src="./slide-3.jpg" alt="Slide 3">
-        </div>
-      </div>
-
-      <div class="slider-controls">
-        <button class="active"></button>
-        <button></button>
-        <button></button>
-      </div>
-      <!-- End slides -->
-  </div>
-  
-  <!-- Begin main content -->
   <main>
-    <!-- Begin wave -->
-    <div class="wave">
-      <svg viewBox="0 0 500 500"
-          preserveAspectRatio="xMinYMin meet">
-            
-          <path d="M0, 100 C150, 200 350,
-              0 500, 100 L500, 00 L0, 0 Z"
-              style="stroke:none; fill:#f7ca29;">
-          </path>
-      </svg>
-    </div>
-    <!-- End wave -->
-    <div id="about">
-      <div class="flex">
-        <div class="left-content">
-          <img src="./pic-1.jpg" alt="pic 1">
-        </div>
-        <div class="right-content">
-          <h2>
-            <button class="btn-style">About us</button>
-          </h2>
-          <p>
-            We are the world <br/>
-            We are the children
-          </p>
-        </div>
+    <div class="redirect-url" id="view-redirect-url">
+      <div class="text-url">
+        We are so very excited to annonce our new Update. <br> 
+        Click <a href="#" id="view-the-last-update">here</a> to view the <span class="last-update-text">last update</span> !
       </div>
     </div>
-    <div id="contact">
-      <div class="flex">
-        <div class="left-content">
-          <img src="./pic-2.jpg" alt="pic 2">
-        </div>
-        <div class="right-content">
-          <h2>
-            <button class="btn-style">Contact</button>
-          </h2>
-          <p class="text-white">
-            Post to e-blague <br/>
-            Let's discuss on <a href="https://github.com/julkwel/among-ux" target="_blank">Among-ux repo</a>
-          </p>
-        </div>
-      </div>
+    <div class="view-last-update" id="assets-last-update-container">
+      <div>Click here to <a href="" id="quit-the-last-update">quit</a> <button type="button" class="button-quit">X</button></div>
+      <div class="the-text">There is nothing here, sorry.</div>
+      <div id="assets-last-update-image"></div>
     </div>
-    </div>
-    <div class="wave-bottom">
-      <svg viewBox="0 0 500 500"
-          preserveAspectRatio="xMinYMin meet">
-            
-          <path d="M0, 100 C150, 200 350,
-              0 500, 100 L500, 00 L0, 0 Z"
-              style="stroke:none; fill:#f7ca29;">
-          </path>
-      </svg>
-    </div>
-
-    <button id="btn-signin">
-      <img src="./signin.png" alt="Login">
-    </button>
-    
-    <button id="btn-signup">
-      <img src="./signup.png" alt="Register">
-    </button>
-    
-    <div id="signinModal" class="modal modal-left">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Signin</p>
-        <form>
-          <input type="text" name="Username" placeholder="Username">
-          <input type="password" name="password" placeholder="Password">
-          <button class="btn-submit">Sign in</button>
-        </form>
-      </div>
-    </div>
-    
-    <div id="signupModal" class="modal modal-right">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Sign up</p>
-        <form>
-          <input type="text" name="First name" placeholder="First name">
-          <input type="text" name="Name" placeholder="Name">
-          <input type="text" name="Username" placeholder="Username">
-          <input type="password" name="password" placeholder="Password">
-          <button class="btn-submit">Sign up</button>
-        </form>
-      </div>
-    </div>
-    <!-- bouton down -->
-    <i class="fas fa-arrow-down" id="scrollToBottomBtn"></i>
   </main>
-  <!-- End main content -->
-  <footer id="footer">
-    <div class="footer-column">
-      <h3>À propos</h3>
-      <p> © Copyright 2023.</p>
-    </div>
-    <div class="footer-column">
-      <h3>Among-Ux</h3>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h3>Contact</h3>
-      <p>Chez Among-Ux </p>
-    </div>
-  </footer>
+  <script src="./assets/app.js" type="text/javascript"></script>
 </body>
-
 </html>

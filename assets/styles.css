@@ -1,0 +1,82 @@
+:root {
+  --orange: #f39c12;
+  --white: #fff;
+  --heading: #333;
+  --paragraphe: #999;
+  --couleur__code: rgb(4, 109, 255);
+  --icon: #eee;
+  --background: rgb(1, 1, 15);
+  --icon__span: #555;
+  --header__link: #92acf5;
+  --content_span: #1e003d;
+  --fa__bars: rgba(0, 0, 0, 0.3);
+  --heading__background: rgba(114, 131, 230, 0.05);
+  --header__shadow: rgba(0, 0, 0, 0.1);
+  --blue: blue;
+  --red: red;
+  --green: green;
+}
+
+body {
+  font-family: Comic Sans MS !important;
+  overflow-x: hidden;
+  text-align: center;
+  background: #faf8f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+#view-the-last-update,#quit-the-last-update {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+.last-update-text {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+#assets-last-update-image {
+  background-image: url('./comique.jpg');
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+#assets-last-update-container {
+  position: relative;
+  margin: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column-reverse;
+}
+
+.button-quit{
+  padding: 6px;
+  background-color: #f39c12;
+  cursor: pointer;
+}
+
+ #view-redirect-url {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ }
