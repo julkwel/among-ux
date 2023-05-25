@@ -35,6 +35,38 @@ body {
   color: black;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  background: #001e72;
+  padding: 10px 10px;
+}
+
+.title{
+  color: #fff;
+  font-size: xx-large;
+  font-family: fantasy;
+  text-shadow: 20px 10px 1px rgba(206, 206, 206, 0.5), 2px 2px 1px rgba(206, 206, 206, 0.5);
+}
+
+.link{
+  display: flex;
+  align-items: center;
+}
+
+.link>p{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.link>p:hover{
+  background: rgb(238, 238, 238,0.5);
+  transition: all 0.5s ease;
+}
+
 #view-the-last-update,#quit-the-last-update {
   text-decoration: none;
   color: black;
