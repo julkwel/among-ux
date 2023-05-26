@@ -182,3 +182,54 @@ li img {
 .contributors {
   padding: 2em;
 }
+
+/* Begin Navbar */
+.navbar {
+  background-color: #f8cb10;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5em;
+}
+
+.navbar button {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: #f8cb10;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+  left: -40em;
+  min-width: 160px;
+  position: absolute;
+  top: 3.3em;
+  z-index: 3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  text-align: left;
+}
+
+.links a {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+/* End Navbar */
