@@ -269,10 +269,6 @@ li img {
   margin-bottom: 5px;
 }
 
-.product-description {
-  margin-bottom: 10px;
-}
-
 .product-price {
   font-size: 16px;
   font-weight: bold;
@@ -297,5 +293,16 @@ li img {
 .add-to-cart:hover {
   cursor: all-scroll;
   opacity: 0;
+}
+
+.product-info label {
+  margin-top: 0.5em;
+  color: #fff;
+  text-align: left;
+}
+
+.product-info select {
+  height: 2em;
+  margin-bottom: 1em;
 }
 /* End cards */
