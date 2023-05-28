@@ -214,3 +214,14 @@ li img {
 .contributors {
   padding: 2em;
 }
+
+#video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}

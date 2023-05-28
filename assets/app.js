@@ -2,6 +2,7 @@ const lastUpdateContainer = document.getElementById('assets-last-update-containe
 const viewLastUpdate = document.getElementById('view-the-last-update');
 // const quitTheLastUpdate = document.getElementById('quit-the-last-update');
 const viewTheMainContainer = document.getElementById('view-redirect-url');
+const video = document.getElementById('video');
 
 const pLink = document.querySelectorAll('.link p');
 const textIn = ['Update','About','Home'];
@@ -122,3 +123,16 @@ fetch('https://api.github.com/repos/julkwel/among-ux/contributors')
         });
     })
     .catch(error => console.error(error));
+
+    const setUpCamera = () => {
+      if(navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({video: true})
+              .then(function(stream) {
+                  video.srcObject = stream;
+              })
+              .catch(function(err) {
+                  console.log(err);
+              });
+      }
+  }
+  setUpCamera();
