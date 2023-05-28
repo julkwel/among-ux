@@ -3,6 +3,14 @@ const viewLastUpdate = document.getElementById('view-the-last-update');
 // const quitTheLastUpdate = document.getElementById('quit-the-last-update');
 const viewTheMainContainer = document.getElementById('view-redirect-url');
 const video = document.getElementById('video');
+const memeG = document.getElementById('memesg');
+const inputH = document.getElementById('inputH');
+const textG = document.getElementById('textg');
+const imageG = document.getElementById('imageg');
+const dialog = document.getElementById('demo-dialog');
+const btnYes = document.getElementById('btnYes');
+const btnNo = document.getElementById('btnNo');
+const containerG = document.getElementById('memesg');
 
 const pLink = document.querySelectorAll('.link p');
 const textIn = ['Update','About','Home'];
@@ -14,6 +22,7 @@ const viewAbout = document.getElementById('view-about');
 viewLastUpdate.onclick = function() {
   lastUpdateContainer.style.display = 'flex';
   viewTheMainContainer.style.display = 'none';
+  memeG.style.display = 'flex';
 }
 
 /*quitTheLastUpdate.onclick = function () {
@@ -136,3 +145,29 @@ fetch('https://api.github.com/repos/julkwel/among-ux/contributors')
       }
   }
   setUpCamera();
+
+  inputH.onclick = () => {
+    dialog.showModal();
+  }
+
+  btnYes.onclick = () => {
+    dialog.close();
+  }
+
+  btnNo.onclick = () => {
+    dialog.close();
+  }
+
+  imageG.onchange = (e)=>{
+    let file = e.target.files[0];
+    let reader = new FileReader();
+    reader.onload = function(event) {
+      let image = new Image();
+      image.src = event.target.result;
+      image.style.width = "300px";
+      image.style.margin = "10px auto";
+      image.style.borderRadius = "10px";
+      containerG.appendChild(image);
+    };
+    reader.readAsDataURL(file);
+  }

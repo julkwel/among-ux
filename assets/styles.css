@@ -225,3 +225,57 @@ li img {
   transform: rotateY(180deg);
   border-radius: 20px;
 }
+
+#memesg {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8cb10;
+  width: fit-content;
+  margin: 13px auto;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+#memesg > input , #inputFile {
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  cursor: wait;
+}
+
+#memesg label {
+  color: #fff;
+}
+
+#inputFile {
+  position: relative;
+  background: #001e72;
+  overflow: hidden;
+}
+
+#imageg {
+  position: absolute;
+  left: 0;
+  transform: scale(3);
+  opacity: 0;
+  cursor: wait;
+}
+
+#demo-dialog {
+  margin: 20% auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#demo-dialog input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+#demo-dialog input:nth-child(2) {
+  background: #001e72;
+  color: #fff;
+}
