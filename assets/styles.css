@@ -1,0 +1,216 @@
+:root {
+  --orange: #f39c12;
+  --white: #fff;
+  --heading: #333;
+  --paragraphe: #999;
+  --couleur__code: rgb(4, 109, 255);
+  --icon: #eee;
+  --background: rgb(1, 1, 15);
+  --icon__span: #555;
+  --header__link: #92acf5;
+  --content_span: #1e003d;
+  --fa__bars: rgba(0, 0, 0, 0.3);
+  --heading__background: rgba(114, 131, 230, 0.05);
+  --header__shadow: rgba(0, 0, 0, 0.1);
+  --blue: blue;
+  --red: red;
+  --green: green;
+}
+
+body {
+  font-family: Comic Sans MS !important;
+  overflow-x: hidden;
+  text-align: center;
+  background: #faf8f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background: #001e72;
+  padding: 10px 10px;
+}
+
+.title{
+  color: #fff;
+  font-size: xx-large;
+  font-family: fantasy;
+  text-shadow: 20px 10px 1px rgba(206, 206, 206, 0.5), 2px 2px 1px rgba(206, 206, 206, 0.5);
+}
+
+.link{
+  display: flex;
+  align-items: center;
+}
+
+.link>p{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.link>p:hover{
+  background: rgb(238, 238, 238,0.5);
+  transition: all 0.5s ease;
+}
+
+#view-the-last-update,#quit-the-last-update {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+.last-update-text {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+#assets-last-update-image {
+  background-image: url('./comique.jpg');
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+#assets-last-update-container {
+  position: relative;
+  margin: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  flex-direction: column-reverse;
+}
+
+.button-quit{
+  padding: 6px;
+  background-color: #f39c12;
+  cursor: pointer;
+}
+
+#view-redirect-url {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.information {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1em;
+  position: relative;
+  width: 50%;
+  z-index: 3;
+}
+
+.information h2 {
+  color: #f8cb10;
+  margin-bottom: 0.5em;
+}
+
+.information p {
+  color: #4c4c4e;
+  line-height: 30px;
+}
+
+.information .text-stylized {
+  color: #f8cb10;
+  font-weight: bold;
+}
+
+.bg-1, .bg-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-1 {
+  background-image: url('./pic-1.jpg');
+}
+
+.bg-2 {
+  background-image: url('./pic-2.jpg');
+}
+
+.text-yellow {
+  color: #f8cb10;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #f8cb10;
+  color: #fff;
+  padding: 12px 20px;
+  position: absolute;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: #f8cb10;
+  font-weight: bold;
+  margin: 1em 2em;
+}
+
+li img {
+  border-radius: 50%;
+}
+
+.contributors {
+  padding: 2em;
+}
