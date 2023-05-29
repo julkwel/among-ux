@@ -148,6 +148,7 @@ fetch('https://api.github.com/repos/julkwel/among-ux/contributors')
 
   inputH.onclick = () => {
     dialog.showModal();
+    dialog.append(`<p>${textG.value}</p>`);
   }
 
   btnYes.onclick = () => {
