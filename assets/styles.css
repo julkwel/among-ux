@@ -84,7 +84,7 @@ body {
 
 .section {
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,3 +312,26 @@ li img {
   font-weight: bold;
 }
 /* End cards */
+
+/* Begin firework effect */
+.firework {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f37712;
+  animation: explode 1s infinite;
+  z-index: 3;
+}
+
+@keyframes explode {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(3);
+      opacity: 0;
+  }
+}
+/* End firework effect */

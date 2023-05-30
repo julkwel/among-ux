@@ -118,3 +118,31 @@ window.onload = function() {
       addToCartButton.textContent = "Buy $" + price.toFixed(2);
   });
 };
+
+// Firework effect
+window.onload = function() {
+  var container = document.getElementById("fireworks-container");
+
+  function createFirework() {
+      var firework = document.createElement("div");
+      firework.classList.add("firework");
+
+      var randomX = Math.random() * (window.innerWidth - 20) + 10;
+      var randomY = Math.random() * (window.innerHeight - 20) + 10;
+
+      firework.style.left = randomX + "px";
+      firework.style.top = randomY + "px";
+
+      container.appendChild(firework);
+
+      setTimeout(function() {
+          container.removeChild(firework);
+      }, 1000);
+  }
+
+  function startFireworks() {
+      setInterval(createFirework, 500);
+  }
+
+  startFireworks();
+};
