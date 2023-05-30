@@ -289,3 +289,14 @@ li img {
 #demo-dialog input:hover {
   box-shadow: 0px 0px 10px #333;
 }
+
+#contributors-list li {
+  transition: all 1s ease;
+  display: flex;
+}
+
+#contributors-list li:hover {
+  transform: rotateY(180deg);
+  transition: all 1s ease;
+  display: flex;
+}
