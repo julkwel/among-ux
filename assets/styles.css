@@ -291,7 +291,7 @@ li img {
 }
 
 .add-to-cart:hover {
-  cursor: all-scroll;
+  cursor: alias;
   opacity: 0;
 }
 
@@ -304,5 +304,10 @@ li img {
 .product-info select {
   height: 2em;
   margin-bottom: 1em;
+}
+
+#valueDisplay {
+  color: #fff;
+  font-weight: bold;
 }
 /* End cards */

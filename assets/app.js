@@ -105,3 +105,13 @@ fetch('https://api.github.com/repos/julkwel/among-ux/contributors')
         });
     })
     .catch(error => console.error(error));
+
+// Display input range values
+window.onload = function() {
+  var cowbellInput = document.getElementById("qty");
+
+  cowbellInput.addEventListener("input", function() {
+      var value = cowbellInput.value;
+      document.getElementById("valueDisplay").textContent = value;
+  });
+};

@@ -46,24 +46,6 @@
           <button class="btn-primary" id="switchBtn">Wanna contribute ?</button>
         </div>
       </div>
-      <div class="buy-something">
-        <div class="product-card">
-          <img class="product-image" src="./assets/coffee.jpg" alt="Coffee">
-          <div class="product-info">
-            <h2>Buy coffee for us</h2>
-            <label for="qty">Quantity</label>
-            <select name="qty" id="qty">
-                <option value="2">2</option>
-                <option value="5">5</option>
-                <option value="10">10</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-                <option value="600">600</option>
-            </select>
-            <button class="add-to-cart">Buy $1.2</button>
-          </div>
-        </div>        
-      </div>
       <div class="section bg-2">
         <div class="information">
           <div class="contributors">
@@ -74,7 +56,21 @@
           <p>We are <span class="text-stylized">passionate developer</span> ready to show you the worst user experience ever. Please <span class="text-stylized">scroll to bottom</span> to see more information</p>
         </div>
       </div>
-    </div>   
+      <div class="buy-something">
+        <div class="product-card">
+          <img class="product-image" src="./assets/coffee.jpg" alt="Coffee">
+          <div class="product-info">
+            <h2>Buy coffee for us</h2>
+            <label for="qty">
+              Quantity:
+              <span id="valueDisplay">0</span>
+            </label>
+            <input type="range" id="qty" name="qty" min="0" max="100" value="0" step="1">
+            <button class="add-to-cart">Buy $1.2</button>
+          </div>
+        </div>        
+      </div>
+    </div>
   </main>
   <script src="./assets/app.js" type="text/javascript"></script>
 </body>
