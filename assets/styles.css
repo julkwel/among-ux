@@ -236,7 +236,7 @@ li img {
 
 /* Begin cards */
 .buy-something {
-  background-color: #f39c12;
+  background-color: #95802a;
   width: 100%;
 }
 .product-card {
@@ -288,6 +288,7 @@ li img {
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 1.5em;
 }
 
 .add-to-cart:hover {
