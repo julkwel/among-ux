@@ -153,6 +153,7 @@ fetch('https://api.github.com/repos/julkwel/among-ux/contributors')
 
   btnYes.onclick = () => {
     dialog.close();
+    alert('THANK YOU!');
   }
 
   btnNo.onclick = () => {
