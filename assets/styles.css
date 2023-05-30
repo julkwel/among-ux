@@ -263,6 +263,10 @@ li img {
   cursor: wait;
 }
 
+#textg:hover {
+  text-align: right;
+}
+
 #demo-dialog {
   margin: 20% auto;
   padding: 20px;
