@@ -108,10 +108,13 @@ fetch('https://api.github.com/repos/julkwel/among-ux/contributors')
 
 // Display input range values
 window.onload = function() {
-  var cowbellInput = document.getElementById("qty");
+  var qtyInput = document.getElementById("qty");
+  var addToCartButton = document.querySelector(".add-to-cart");
 
-  cowbellInput.addEventListener("input", function() {
-      var value = cowbellInput.value;
+  qtyInput.addEventListener("input", function() {
+      var value = qtyInput.value;
       document.getElementById("valueDisplay").textContent = value;
+      var price = value * 1.2;
+      addToCartButton.textContent = "Buy $" + price.toFixed(2);
   });
 };
