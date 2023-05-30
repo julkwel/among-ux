@@ -117,10 +117,8 @@ window.onload = function() {
       var price = value * 1.2;
       addToCartButton.textContent = "Buy $" + price.toFixed(2);
   });
-};
 
-// Firework effect
-window.onload = function() {
+  // Firework effect
   var container = document.getElementById("fireworks-container");
 
   function createFirework() {
